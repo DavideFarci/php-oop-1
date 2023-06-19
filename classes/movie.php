@@ -20,6 +20,6 @@ class Movie
     public function getMovieData()
     {
         $genreString = implode(', ', $this->genres);
-        return $this->title . ' ' . $this->director . ' ' . $this->year . ' ' . $genreString . ' ' . $this->duration;
+        return $this->title . ' - ' . $this->director . ' - ' . $this->year . ' - ' . $genreString . ' - ' . $this->duration;
     }
 }

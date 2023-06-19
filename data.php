@@ -27,51 +27,52 @@ $movies = [
         ]
     ),
     new Movie(
-        'The Diparted',
-        'Martin Scorsese',
-        '2006',
-        '151 min',
+        'Salvate il soldato Ryan',
+        'Steven Spielberg',
+        '1998',
+        '169 min',
         [
-            new Genre($genres[1]),
+            new Genre($genres[2]),
             new Genre($genres[4]),
             new Genre($genres[5]),
-            new Genre($genres[3]),
+            new Genre($genres[7]),
         ]
     ),
     new Movie(
-        'The Diparted',
-        'Martin Scorsese',
-        '2006',
-        '151 min',
+        'The Shining',
+        'Stanley Kubrick',
+        '1980',
+        '144 min',
         [
+            new Genre($genres[8]),
             new Genre($genres[1]),
             new Genre($genres[4]),
-            new Genre($genres[5]),
-            new Genre($genres[3]),
         ]
     ),
     new Movie(
-        'The Diparted',
-        'Martin Scorsese',
-        '2006',
-        '151 min',
+        'Full Metal Jacket',
+        'Stanley Kubrick',
+        '1987',
+        '116 min',
         [
-            new Genre($genres[1]),
+            new Genre($genres[2]),
             new Genre($genres[4]),
+            new Genre($genres[9]),
+            new Genre($genres[1]),
             new Genre($genres[5]),
-            new Genre($genres[3]),
         ]
     ),
     new Movie(
-        'The Diparted',
-        'Martin Scorsese',
-        '2006',
-        '151 min',
+        'Pulp Fiction',
+        'Quentin Tarantino',
+        '1994',
+        '154 min',
         [
-            new Genre($genres[1]),
-            new Genre($genres[4]),
-            new Genre($genres[5]),
             new Genre($genres[3]),
+            new Genre($genres[10]),
+            new Genre($genres[4]),
+            new Genre($genres[1]),
+            new Genre($genres[6]),
         ]
     ),
 ];
