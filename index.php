@@ -1,13 +1,8 @@
 <?php
 
 include __DIR__ . '/classes/movie.php';
-
-$theDiparted = new Movie("The Diparted", "Martin Scorsese", "2006", "thriller", "151 min");
-$soldatoRyan = new Movie("Salvate il soldato Ryan", "Steven Spielberg", "1998", "war", "169 min");
-
-// $theDiparted->getMovieData();
-// $soldatoRyan->getMovieData();
-?>
+include __DIR__ . '/classes/genres.php';
+include __DIR__ . '/data.php'; ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -20,16 +15,27 @@ $soldatoRyan = new Movie("Salvate il soldato Ryan", "Steven Spielberg", "1998", 
 
 <body>
     <ul>
+        <h1>MOVIES</h1>
+        <?php foreach ($movies as $movie) { ?>
+            <li><?= $movie->getMovieData() ?></li><?php
+                                                } ?>
+    </ul>
+
+
+
+
+
+    <!-- <ul>
         <li>
             <h1>MOVIES</h1>
         </li>
         <li>
-            <?php echo $theDiparted->getMovieData() ?>
+            $theDiparted->getMovieData()
         </li>
         <li>
-            <?php echo $soldatoRyan->getMovieData() ?>
+            $soldatoRyan->getMovieData() 
         </li>
-    </ul>
+    </ul> -->
 </body>
 
 </html>
